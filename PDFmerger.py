@@ -4,6 +4,15 @@ from PyPDF2 import PdfReader, PdfWriter
 
 st.set_page_config(page_title="Akash's PDF Merger", page_icon=":page_facing_up:", layout="wide") 
 
+# Use local CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+local_css("style/style.css")
+
+
 st.title("Akash's PDF Merger :page_facing_up:")
 st.write("---")
 
