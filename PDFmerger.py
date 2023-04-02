@@ -2,7 +2,7 @@ import streamlit as st
 from io import BytesIO
 from PyPDF2 import PdfReader, PdfWriter
 
-st.set_page_config(page_title="Akash's PDF Merger", page_icon=":page_facing_up:", layout="wide") 
+st.set_page_config(page_title="Cyberakash's PDF Merger", page_icon=":page_facing_up:", layout="wide") 
 
 # Use local CSS
 def local_css(file_name):
